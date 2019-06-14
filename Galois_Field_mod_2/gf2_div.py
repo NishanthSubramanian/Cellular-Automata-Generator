@@ -17,7 +17,7 @@ def gf2_div(dividend, divisor,p):
         f_temp = dividend
         num_temp = Galois_Field_mod_2.gf2_mul_normal(f_temp,p)
         result, rem = gf2_div(num_temp,divisor,p)
-        return result,rem
+        return rem,result
 
     else:
         u = dividend.astype("uint8")
